@@ -2,8 +2,28 @@
   "projectServerModel": "node",
   "projectName": "teamopp2-macbook",
   "gitURL": "https://github.com/trulsm/teamopp2",
-  "firebaseProjectID": "",
-  "herokuProjectID": "",
   "projectType": "web",
-  "npmInstall": true
+  "npmInstall": true,
+  "routingHandler": "node",
+  "useRouting": true,
+  "addBase": true,
+  "targets": [],
+  "frameworks": [
+    {
+      "name": "appConnect",
+      "type": "local"
+    },
+    {
+      "name": "jquery_slim_35",
+      "type": "local"
+    },
+    {
+      "name": "fontawesome_4",
+      "type": "local"
+    },
+    {
+      "name": "bootstrap4",
+      "type": "local"
+    }
+  ]
 }
