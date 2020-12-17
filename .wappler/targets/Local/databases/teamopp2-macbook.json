@@ -1,0 +1,12 @@
+{
+  "type": "postgres",
+  "connection": {
+    "host": "localhost",
+    "user": "trulsmichalsen",
+    "database": "teamopp2"
+  },
+  "direct": true,
+  "schema": {
+    "tables": {}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "teamopp2-macbook",
+  "module": "dbconnector",
+  "action": "connect",
+  "options": {
+    "client": "postgres",
+    "connection": {
+      "host": "localhost",
+      "user": "trulsmichalsen",
+      "database": "teamopp2"
+    }
+  },
+  "fileName": "teamopp2-macbook.json"
+}
