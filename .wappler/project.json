@@ -1,29 +1,55 @@
 {
-  "projectServerModel": "node",
-  "projectName": "teamopp2-macbook",
-  "gitURL": "https://github.com/trulsm/teamopp2",
-  "projectType": "web",
-  "npmInstall": true,
-  "routingHandler": "node",
-  "useRouting": true,
-  "addBase": true,
-  "targets": [],
+  "projectName": "teamopp2",
+  "styleFile": "/css/style.css",
+  "assetsFolder": "/assets",
+  "designFramework": "bootstrap4",
   "frameworks": [
     {
-      "name": "appConnect",
-      "type": "local"
-    },
-    {
-      "name": "jquery_slim_35",
-      "type": "local"
+      "name": "jquery_slim_33",
+      "type": "cdn"
     },
     {
       "name": "fontawesome_4",
-      "type": "local"
+      "type": "cdn"
     },
     {
       "name": "bootstrap4",
       "type": "local"
+    },
+    {
+      "name": "appConnect",
+      "type": "local"
     }
-  ]
+  ],
+  "projectServerModel": "node",
+  "webRootFolder": "/public",
+  "useRouting": true,
+  "addBase": true,
+  "routingHandler": "node",
+  "targets": [
+    {
+      "name": "Development",
+      "remoteURL": "http://localhost:3000/",
+      "access": "local",
+      "localFolder": "file:///Users/trulsmichalsen/Desktop/wappler/teamopp2"
+    },
+    {
+      "name": "teamopp2-docker",
+      "remoteURL": "http://localhost:8100",
+      "webServerPort": 8100,
+      "webServerLang": "node",
+      "databaseType": "postgres",
+      "databasePort": 9906,
+      "postgresVersion": "11.1.x",
+      "postgres_rootName": "trulsmichalsen",
+      "postgres_rootPassword": "janbanan",
+      "postgres_databaseName": "teamopp2",
+      "targetType": "docker",
+      "webServer": "node",
+      "NodeVersion": "12"
+    }
+  ],
+  "activeTarget": "teamopp2-docker",
+  "projectType": "web",
+  "npmInstall": true
 }

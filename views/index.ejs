@@ -7,7 +7,7 @@
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
     <title>Untitled Document</title>
-    <!-- New Wappler Page -->
+
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="fontawesome4/css/font-awesome.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,6 +15,71 @@
 </head>
 
 <body is="dmx-app" id="index">
+    <%- await include('/partials/_header', Object.assign({}, locals)) %><main>
+
+        <div class="wappler-block pt-5 pb-5 container">
+
+            <div class="row">
+
+                <div class="text-left col-sm-3 col-lg-3">
+                    <h4>Markedsplassen for kompetanse<br><small class="text-muted">With faded secondary text</small></h4>
+                    <p>A nice paragraph</p>
+                    <button class="btn btn-primary">Registrer deg</button>
+                </div>
+                <div class="col-sm-9 text-right d-none d-sm-block"><img src="assets/img/AdobeStock_242404332.jpeg" class="img-fluid flex-lg-shrink-1 d-none d-sm-inline"></div>
+            </div>
+        </div>
+        <div class="container wappler-block pt-4 pb-4">
+            <div class="row mb-4" is="dmx-if" id="conditional1">
+                <div class="col-12"></div>
+            </div>
+            <div class="row">
+                <div class="text-center col-12 col-sm-6 col-lg-3 mb-3">
+                    <img class="wappler-type-picture mb-3">
+                    <h5>Fancy display heading</h5>
+                    <p>A nice paragraph</p>
+                </div>
+                <div class="text-center col-12 col-sm-6 col-lg-3 mb-3">
+                    <img class="wappler-type-picture mb-3">
+                    <h5>Fancy display heading</h5>
+                    <p>A nice paragraph</p>
+                </div>
+                <div class="text-center col-12 col-sm-6 col-lg-3 mb-3">
+                    <img class="wappler-type-picture mb-3">
+                    <h5>Fancy display heading</h5>
+                    <p>A nice paragraph</p>
+                </div>
+                <div class="text-center col-12 col-sm-6 col-lg-3 mb-3">
+                    <img class="wappler-type-picture mb-3">
+                    <h5>Fancy display heading</h5>
+                    <p>A nice paragraph</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="../../../Downloads/bg-grey.png"><img></a>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="container wappler-block pt-5 pb-5">
+            <div class="row align-items-center">
+                <div class="text-center col-12 col-sm-6 col">
+                    <h4>Fancy display heading<br><small class="text-muted">With faded secondary text</small></h4>
+                    <p>A nice paragraph</p>
+                    <button class="btn btn-primary mb-4">Button</button>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <img height="500" class="wappler-type-picture w-100">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <%- await include('/partials/_footer', Object.assign({}, locals)) %>
 
     <script src="bootstrap/4/js/popper.min.js"></script>
     <script src="bootstrap/4/js/bootstrap.min.js"></script>
